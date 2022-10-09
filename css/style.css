@@ -72,7 +72,7 @@ body{
 
 table, th, td {
     width: fit-content;
-    border: 1px solid black;
+    border: 1px solid #ddd;
     border-collapse: collapse;
 
     background-color: #fff;
@@ -83,7 +83,11 @@ thead th:nth-child(1), th:nth-child(2){
   left: 0;
   background: white;
   z-index: 1;
-  border: 1px solid black;
+  border: 1px solid #ddd;
+}
+
+thead th:nth-child(2){
+    left: 78px;
 }
 
 tbody{
@@ -97,8 +101,13 @@ tbody th{
   background: white;
   z-index: 1;
 
-  border: 1px solid black;
+  border: 1px solid #ddd;
 }
+
+tbody th:nth-child(2){
+    left: 78px;
+}
+
 
 th, td{
     padding: 5px;
