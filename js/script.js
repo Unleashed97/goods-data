@@ -128,3 +128,40 @@ const handleTable = () => {
 }
 
 handleTable()
+
+// avg value for column
+
+// get column
+
+const avgValues = () => {
+    const avgRows = document.querySelectorAll('.avg')
+    
+
+    // avgRows.forEach()
+}
+
+avgValues()
+
+// toggle cities
+const toggleCities = () => {
+    const goodRows = document.querySelectorAll('.good-row')
+
+    goodRows.forEach(row => {
+        row.addEventListener('click', ()=> {
+            let parent = row
+
+            function nextSibling(parent){
+                let nextEl = parent.nextElementSibling
+                nextEl.classList.toggle('hide')
+
+                return nextEl
+            }
+
+            for(let i =0; i< 7; i++){
+                parent = nextSibling(parent)
+            }
+        })
+    })
+
+}
+toggleCities()

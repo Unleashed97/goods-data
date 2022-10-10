@@ -146,3 +146,9 @@ th, td{
 .white{
     background-color: #fff;
 }
+
+
+/* classes */
+.hide{
+    display: none;
+}
