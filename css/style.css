@@ -2,7 +2,6 @@ body{
     margin: 0;
 
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-
 }
 
 /* container */
@@ -24,6 +23,13 @@ body{
 
     margin-bottom: 50px;
 }
+
+@media (max-width: 768px){
+    .form{
+        flex-direction: column;
+    }
+}
+
 .form__input, .form__btn{
     padding: 7px 15px;
     
@@ -32,6 +38,10 @@ body{
     font-size: 18px;
 
     border-radius: 5px;
+}
+
+.form__btn{
+    width: fit-content;
 }
 
 .form__input{
@@ -70,6 +80,16 @@ body{
     overflow: auto;
 }
 
+.table{
+    
+    table-layout: auto;
+    max-width: 1920px;
+    
+    height: 40px;
+
+    overflow: scroll;
+}
+
 table, th, td {
     width: fit-content;
     border: 1px solid #ddd;
@@ -90,11 +110,6 @@ thead th:nth-child(2){
     left: 78px;
 }
 
-tbody{
-    max-width: 1500px; 
-    overflow: auto;
-}
-
 tbody th{
     position: sticky;
   left: 0;
@@ -108,19 +123,8 @@ tbody th:nth-child(2){
     left: 78px;
 }
 
-
 th, td{
     padding: 5px;
-}
-
-.table{
-    
-    table-layout: auto;
-    width: 1920px;
-    
-    height: 40px;
-
-    overflow: scroll;
 }
 
 .table__cell-city{
@@ -131,6 +135,7 @@ th, td{
     width: 200px;
 }
 
+/* cell colors */
 .green{
     background-color: rgb(155, 245, 155);
 }
@@ -147,8 +152,7 @@ th, td{
     background-color: #fff;
 }
 
-
-/* classes */
+/* hide city */
 .hide{
     display: none;
 }
